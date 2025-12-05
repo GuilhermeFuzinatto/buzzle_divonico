@@ -10,6 +10,15 @@ if (user) {
 }
 */
 
+function vaiproinicio(){
+    if (user.tipo === 'aluno'){
+        window.location.href = 'homealuno.html'
+    }
+    if (user.tipo === 'prof'){
+        window.location.href = 'homeprof.html'
+    }
+}
+
 async function cadastrarTurma(event) {
     event.preventDefault();
     /*

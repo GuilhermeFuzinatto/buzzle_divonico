@@ -8,6 +8,20 @@ if (user) {
     spaceid.textContent = "#" + user.id;
 } 
 
+function vaiproinicio(){
+    if (user.tipo === 'aluno'){
+        window.location.href = 'homealuno.html'
+    }
+    if (user.tipo === 'prof'){
+        window.location.href = 'homeprof.html'
+    }
+}
+
+function tuntuntunsair(){
+    user = ''
+    window.location.href = 'login.html'
+}
+
 // Função para listar as turmas
 async function listarTurma() {
     

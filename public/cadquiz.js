@@ -1,5 +1,14 @@
 const user = JSON.parse(localStorage.getItem('usuario'));
 
+function vaiproinicio(){
+    if (user.tipo === 'aluno'){
+        window.location.href = 'homealuno.html'
+    }
+    if (user.tipo === 'prof'){
+        window.location.href = 'homeprof.html'
+    }
+}
+
 // Função para listar as turmas
 async function listarTurma() {
     

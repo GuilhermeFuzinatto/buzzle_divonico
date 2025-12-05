@@ -5,6 +5,16 @@ window.onload = () => {
     listarQuizzes();
 };
 
+function vaiproinicio(){
+    if (user.tipo === 'aluno'){
+        window.location.href = 'homealuno.html'
+    }
+    if (user.tipo === 'prof'){
+        window.location.href = 'homeprof.html'
+    }
+}
+
+
 //CARROSSEL HOMEPAGE
 let currentIndex1 = 0;
 let currentIndex2 = 0;

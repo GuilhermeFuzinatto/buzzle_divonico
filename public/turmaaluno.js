@@ -1,6 +1,15 @@
 const user = JSON.parse(localStorage.getItem('usuario'));
 const turma = JSON.parse(localStorage.getItem('turma'));
 
+function vaiproinicio(){
+    if (user.tipo === 'aluno'){
+        window.location.href = 'homealuno.html'
+    }
+    if (user.tipo === 'prof'){
+        window.location.href = 'homeprof.html'
+    }
+}
+
 // carregar nome da turma na tela
 document.getElementById("turmanome").textContent = turma.nome;
 document.getElementById("turmadesc").textContent = turma.desc;
